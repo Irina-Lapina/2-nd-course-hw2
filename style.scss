@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  .center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+  
+  .top {
+    height: 800px;
+    background: #E1FF8F;
+    background-image: url(./img/Star2.png), url(./img/Star3.png), url(./img/Star4.png), url(./img/Star5.png), url(./img/Star_big.png);
+    background-position: 63px 94px, 156px 69px, 1013px 568px, 948px 538px, 854px -333px;
+    background-repeat: no-repeat;
+
+
+    &__heading {
+      color: rgb(32, 32, 39);
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 78px;
+      max-width: 768px;
+      padding-top: 196px;
+      margin-bottom: 24px;
+    }
+    &__text {
+      color: rgb(32, 32, 39);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      max-width: 720px;
+      padding-bottom: 48px;
+    }
+    &__bold {
+      font-weight: 600;
+    }
+    &__button {
+      box-sizing: border-box;
+      border: 1px solid rgb(32, 32, 39);
+      border-radius: 60px;
+      background: rgb(32, 32, 39);
+      padding: 16px 65px;
+      color: rgb(255, 255, 255);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 141.69%;
+      font-family: inherit;
+      cursor: url("./img/cursor.png"), pointer;
+      transition: all 1s;
+      text-decoration: none;
+    }
+    &__button:hover {
+      background: #ffffff;
+      color: #000000;
+    }
+  }
+  
+  .animated-strip {
+    display: flex;
+    align-items: center;
+    gap: 51px;
+    height: 90px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    background: rgb(188, 236, 48);
+    padding: 27px 0;
+    overflow: hidden;
+    animation: scroll 20s linear infinite;
+
+    &__item {
+      display: flex;
+      gap: 51px;
+      flex-shrink: 0;
+    }
+    &__text {
+      color: rgb(32, 32, 39);
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 110%;
+      text-transform: uppercase;
+    }
+    &__mobile {
+      display: none;
+    }
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 20px));
+    }
+  }
+  
+  .content-box {
+    background: #202027;
+    background-image: url(./img/Star11.png), url(./img/Star12.png), url(./img/Star1.png);
+    background-position: 25px 770px, 40px 822px, 933px 77px;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+
+    &__title {
+      color: rgb(255, 255, 255);
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 78px;
+      padding-top: 94px;
+      padding-bottom: 24px;
+    }
+    &__text {
+      color: rgb(255, 255, 255);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      padding-bottom: 72px;
+      max-width: 700px;
+    }
+    &__name {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 32px;
+    }
+    &__game-one {
+      width: 378px;
+      height: 473px;
+      background: #ffffff;
+      border-radius: 30px;
+      cursor: url("./img/cursor.png"), pointer;
+      text-decoration: none;
+      z-index: 40;
+      box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+    }
+    &__game-one:hover {
+      transform: scale(1.1);
+    }
+    &__game-two {
+      width: 378px;
+      height: 512px;
+      background: #ffffff;
+      border-radius: 30px;
+      cursor: url("./img/cursor.png"), pointer;
+      text-decoration: none;
+      z-index: 40;
+      box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+    }
+    &__game-two:hover {
+      transform: scale(1.1);
+    }
+    &__game-three {
+      width: 378px;
+      height: 551px;
+      background: #ffffff;
+      border-radius: 30px;
+      text-decoration: none;
+      cursor: url("./img/cursor.png"), pointer;
+      box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+    }
+    &__game-three:hover {
+      transform: scale(1.1);
+    }
+    &__img {
+      height: 314px;
+    }
+    &__description {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 16px;
+      margin-top: 32px;
+      margin-left: 32px;
+      width: 314px;
+    }
+    &__product {
+      color: rgb(32, 32, 39);
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 39px;
+    }
+    &__number {
+      color: rgb(32, 32, 39);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 110%;
+      padding-top: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    &__number_border {
+      width: 108px;
+      border-radius: 52.58px;
+      background: rgb(247, 247, 247);
+    }
+  }
+  .game-box {
+    background: #202027;
+    background-image: url(./img/Star6_.png), url(./img/Star7_.png), url(./img/Star8_.png), url(./img/Star10_.png);
+    background-repeat: no-repeat;
+    background-position: 1320px 126px, 1277px 93px, 1319px 3366px, 1249px 3414px;
+    padding-bottom: 144px;
+
+    &__title {
+      color: rgb(255, 255, 255);
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 78px;
+      padding-top: 46px;
+      padding-bottom: 76px;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    &__cart {
+      display: flex;
+      border-radius: 30px;
+      box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+      background: rgb(255, 255, 255);
+    }
+    &__cart_reverse {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    &__description {
+      padding: 48px;
+    }
+    &__product {
+      color: rgb(32, 32, 39);
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 59px;
+      padding-bottom: 24px;
+    }
+    &__text {
+      color: rgb(32, 32, 39);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      padding-bottom: 36px;
+    }
+    &__button {
+      border-radius: 60px;
+      background: rgb(32, 32, 39);
+      text-decoration: none;
+      box-sizing: border-box;
+      padding: 16px 75px;
+      color: rgb(255, 255, 255);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 141.69%;
+      font-family: inherit;
+      cursor: url("./img/cursor.png"), pointer;
+      transition: all 1s;
+    }
+    &__button:hover {
+      background: #ffffff;
+      color: #000000;
+      border: 1px solid rgb(0, 0, 0);
+    }
+  }
+
+  .footer {
+    background: #BDED35;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      color: rgb(0, 0, 0);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 29px;
+    }
+  }
+  @import 'tablet';
+  @import 'mobile'
