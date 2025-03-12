@@ -1,4 +1,4 @@
-let a = Number(alert('10'));
+/*let a = Number(alert('10'));
 a = 20;
 alert(a);
 
@@ -45,4 +45,4 @@ const user = {
 isAdminG = true;
 
 let name = prompt('Ваше имя?');
-alert('Привет, ' + name);
+alert('Привет, ' + name);*/
