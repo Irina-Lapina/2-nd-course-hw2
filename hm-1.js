@@ -17,7 +17,7 @@ alert(multiplication);
 let division = ten / two;
 alert(division);
 
-degree = 2 ** 5;
+let degree = 2 ** 5;
 let result = degree;
 alert(result);
 
@@ -45,4 +45,4 @@ const user = {
 isAdminG = true;
 
 let name = prompt('Ваше имя?');
-alert('Привет, ' + name);*/
+alert(`Привет, ${name}`);*/

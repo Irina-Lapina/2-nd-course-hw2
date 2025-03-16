@@ -1,4 +1,4 @@
-let password = 1234;
+/*let password = 1234;
 let enter = Number(prompt('Введите пароль'));
 
 if (enter === 1234) {
@@ -69,4 +69,4 @@ switch (monthNumber) {
 
     default: console.log('вы ввели неверный номер')
         break;
-}
+}*/

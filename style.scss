@@ -15,7 +15,7 @@
   }
   
   .top {
-    height: 800px;
+    height: 710px;
     background: #E1FF8F;
     background-image: url(./img/Star2.png), url(./img/Star3.png), url(./img/Star4.png), url(./img/Star5.png), url(./img/Star_big.png);
     background-position: 63px 94px, 156px 69px, 1013px 568px, 948px 538px, 854px -333px;
@@ -75,8 +75,13 @@
     background: rgb(188, 236, 48);
     padding: 27px 0;
     overflow: hidden;
-    animation: scroll 20s linear infinite;
 
+    &__content {
+      flex-shrink: 0;
+      display: flex;
+      gap: 51px;
+      animation: scroll 20s linear infinite;
+    }
     &__item {
       display: flex;
       gap: 51px;
