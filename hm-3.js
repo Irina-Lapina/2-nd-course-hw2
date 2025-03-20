@@ -1,4 +1,4 @@
-for (let i = 0; i < 2; i++) {
+/*for (let i = 0; i < 2; i++) {
     console.log('Привет!');
 };
 
@@ -36,4 +36,4 @@ let dayFriday = 5;
 let allDay = 31;
 for (let f = dayFriday; f <= allDay ; f += 7) {
     console.log(`Сегодня пятница, ${f}-е число. Необходимо подготовить отчет.`)
-}
+}*/
