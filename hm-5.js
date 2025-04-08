@@ -1,40 +1,40 @@
-// function game2() {
-//     const operators = ["+", "-", "*", "/"];
-//     const operator = operators[Math.floor(Math.random() * operators.length)];
-//     let a, b, result;  
-//     let userAnswer;
+function game2() {
+    const operators = ["+", "-", "*", "/"];
+    const operator = operators[Math.floor(Math.random() * operators.length)];
+    let a, b, result;  
+    let userAnswer;
 
-//     a = Math.floor(Math.random() * 10) + 1;
-//     b = Math.floor(Math.random() * 10) + 1;
-//     switch(operator) {
-//             case '+':
-//             userAnswer = +prompt(`Сложите ${a} и ${b}`);
-//             result = a + b;
-//             break;
+    a = Math.floor(Math.random() * 10) + 1;
+    b = Math.floor(Math.random() * 10) + 1;
+    switch(operator) {
+            case '+':
+            userAnswer = +prompt(`Сложите ${a} и ${b}`);
+            result = a + b;
+            break;
 
-//             case '-':
-//             userAnswer = +prompt(`Вычтите ${b} от ${a}`);
-//             result = a - b;
-//             break;
+            case '-':
+            userAnswer = +prompt(`Вычтите ${b} от ${a}`);
+            result = a - b;
+            break;
 
-//             case '*':
-//             userAnswer = +prompt(`Умножьте ${a} на ${b}`);
-//             result = a * b;
-//             break;
+            case '*':
+            userAnswer = +prompt(`Умножьте ${a} на ${b}`);
+            result = a * b;
+            break;
 
-//             case '/':
-//             userAnswer = +prompt(`Разделите ${b} на ${a}`);
-//             result = a / b;
-//             break;
-//     }
+            case '/':
+            userAnswer = +prompt(`Разделите ${b} на ${a}`);
+            result = a / b;
+            break;
+    }
 
-//         if (userAnswer === result) {
-//             alert('Верно');
-//         }
-//         else {
-//             alert('Неверно');
-//         }
-// }
+        if (userAnswer === result) {
+            alert('Верно');
+        }
+        else {
+            alert('Неверно');
+        }
+}
 
 // // Задание 1
 // const numbers = [1, 5, 4, 10, 0, 3];
