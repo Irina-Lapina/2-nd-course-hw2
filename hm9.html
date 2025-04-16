@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading__hide {
+            display: none;
+        };
+    </style>
+</head>
+<body>
+    <h1 class="heading">Lorem, ipsum dolor.</h1>
+    <button class="btn">Скрыть</button>
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+    <button class="text__btn">Изменить цвет</button>
+
+    <h1 class="heading2">Lorem ipsum dolor sit.</h1>
+    <button class="heading2__btn">Изменить текст</button>
+
+    <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+
+    <p class="description__1">Lorem ipsum dolor sit amet.</p>
+    <p class="paragraph">Lorem ipsum dolor sit amet.</p>
+    <p class="paragraph">Lorem ipsum dolor sit amet.</p>
+    <p class="paragraph">Lorem ipsum dolor sit amet.</p>
+    <p class="description__1">Lorem ipsum dolor sit amet.</p>
+
+    <button class="add">Добавить элемент</button>
+    <div class="content"></div>
+
+    <p class="description__3">Lorem, ipsum.</p>
+    <p class="noname">Lorem.</p>
+    <p class="noname">Lorem.</p>
+    <p class="description__3">Lorem, ipsum.</p>
+    <button class="btn4">Удалить элемент</button>
+
+    <script>
+        const headingEl = document.querySelector('.heading');
+        const btnEl = document.querySelector('.btn');
+        btnEl.addEventListener('click', () => {
+            headingEl.classList.toggle('heading__hide');
+        });
+
+        const textEL = document.querySelector('.text');
+        const text__btnEL = document.querySelector('.text__btn');
+        text__btnEL.addEventListener('click', () => {
+            textEL.style.color = 'blue';
+        });
+
+        const heading2EL = document.querySelector('.heading2');
+        const heading2__btnEL = document.querySelector('.heading2__btn');
+        heading2__btnEL.addEventListener('click', () => {
+            heading2EL.textContent = 'Привет, мир!';
+        });
+
+        const searchEL = document.querySelectorAll('.description');
+        searchEL.forEach(description => {
+            description.textContent = 'Измененный текст';
+        });
+
+        const search2EL = document.querySelectorAll('.description__1');
+        search2EL.forEach(description__1 => {
+            description__1.textContent = 'Новый текст';
+        });
+
+        const btnAddEL = document.querySelector('.add');
+        const contentEL = document.querySelector('.content');
+
+        btnAddEL.addEventListener('click', () => {
+            const newDiv = document.createElement('div');
+            newDiv.textContent = 'Новый абзац';
+            newDiv.classList.add('text');
+            contentEL.appendChild(newDiv);
+        });
+
+
+        const btn4EL = document.querySelector('.btn4');
+        btn4EL.addEventListener('click', () => {
+            const paragraph = document.querySelector('.description__3');
+            paragraph.remove();
+        });
+    </script>
+</body>
+</html>

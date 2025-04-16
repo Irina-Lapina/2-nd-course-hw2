@@ -1,27 +1,27 @@
-// const hiddenNumber = Math.floor(Math.random() * 100) + 1;
-// let guess;
+const hiddenNumber = Math.floor(Math.random() * 100) + 1;
+let guess;
 
-// function game1 () {
+function game1 () {
 
-//     while (true) {
-//         const input = prompt('Попробуй угадать число от 1 до 100');
-//         guess = Number(input);
+    while (true) {
+        const input = prompt('Попробуй угадать число от 1 до 100');
+        guess = Number(input);
 
-//         if (input === null) {
-//             alert('Попробуй вновь!');
-//             return;
-//         }
+        if (input === null) {
+            alert('Попробуй вновь!');
+            return;
+        }
 
-//         if (guess === hiddenNumber) {
-//             alert(`Вы угадали число ${hiddenNumber}`);
-//             break;
-//         } else if (guess < hiddenNumber) {
-//             alert('Число должно быть больше!');
-//         } else {
-//             alert('Число должно быть меньше!');
-//         }
-//     }
-// }
+        if (guess === hiddenNumber) {
+            alert(`Вы угадали число ${hiddenNumber}`);
+            break;
+        } else if (guess < hiddenNumber) {
+            alert('Число должно быть больше!');
+        } else {
+            alert('Число должно быть меньше!');
+        }
+    }
+}
 
 // // Задание 1
 // function min(a, b) {
