@@ -140,8 +140,7 @@
       flex-direction: row;
       justify-content: space-evenly;
       flex-wrap: wrap;
-      align-items: flex-start;
-      gap: 32px;
+      align-items: flex-end;
     }
     &__game-one {
       width: 378px;
@@ -151,6 +150,7 @@
       cursor: url("./img/cursor.png"), pointer;
       text-decoration: none;
       z-index: 40;
+      margin-bottom: 32px;
       box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
     }
     &__game-one:hover {
