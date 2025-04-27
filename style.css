@@ -136,8 +136,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 32px;
+  align-items: flex-end;
 }
 .content-box__game-one {
   width: 378px;
@@ -147,6 +146,7 @@ body {
   cursor: url("./img/cursor.png"), pointer;
   text-decoration: none;
   z-index: 40;
+  margin-bottom: 32px;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
 }
 .content-box__game-one:hover {
@@ -407,8 +407,8 @@ body {
     display: block;
   }
   .game-box__img {
-    width: 343px;
-    height: 284px;
+    width: 100%;
+    height: auto;
   }
   .game-box__description {
     padding: 29px;
